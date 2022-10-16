@@ -55,6 +55,14 @@ git commit -m "sss"
 git commit -m "sss"
 ```
 
+|GIT BASICS   |Description   |
+|---|---|
+|git init   | Create empty Git repo in specified directory. Run with no arguments to initialize the current directory as a git repository.  |
+|git clone   |Clone repo located at onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH.   |
+|git add   |Stage all changes in for the next commit. Replace with a to change a specific file   |
+
+^c52dcf
+
 
 ## to do
 - [ ] add branch stuff
