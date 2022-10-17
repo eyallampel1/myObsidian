@@ -1,12 +1,24 @@
 # AWK - Linux scripting language 
 you can use awk command in Linux to filter data, usually std in is a file, std out is your screen
 
+## How is AWK command look like ? 
+> pattern { action }
+
+* Example : 
+	search in the file named BBS-list for a row containing the word foo (or part of a word) , if found such a row, print the whole row (the print $0 statement)
+```shell
+awk ’/foo/ { print $0 }’ BBS-list
+```
+
+*In an AWK rule, **either the pattern or the action can be omitted**, but not both. If the pattern is omitted, then the action is performed for every input line. If the action is omitted, the default action is to print all lines that match the pattern.
+
+
 
 ## Print the first column in a file
 ``` shell
 awk '{print $1}' myfile.txt
 ```
-1. $0 = whole file
+1. $0 = whole row
 2. $1 = first column
 3. $2= sec column
 4. NF = Number of fields(columns) 
@@ -57,3 +69,4 @@ Hello World
 12345
 ```
 
+[[nawkA4.pdf]]

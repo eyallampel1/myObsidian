@@ -43,6 +43,15 @@ If you want to search any special command characters, you need to escape them wi
 ```regex
 \w+\.\w+\(\) -> function.doSomthing()
 ```
+## The ? Quantifier - 0 or 1 occurrence 
 
-[[Atlassian-Git-Cheatsheet.pdf#page=2]]
-
+The ? Sign after a word means 0 or 1 occurrence only , this is the optional character sign
+examples: 
+	1.
+	
+```regex
+b?og > match : og,bog
+```
+	2.
+	
+![[Pasted image 20221017150012.png]]
